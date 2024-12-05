@@ -1,0 +1,22 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="JPA_Relationships_Project">
+        <class>it.epicode.esercizi.entity.Persona</class>
+        <class>it.epicode.esercizi.entity.Partecipazione</class>
+        <class>it.epicode.esercizi.entity.Evento</class>
+        <class>it.epicode.esercizi.entity.PartitaDiCalcio</class>
+        <class>it.epicode.esercizi.entity.GaraDiAtletica</class>
+        <class>it.epicode.esercizi.entity.Concerto</class>
+        <class>it.epicode.esercizi.entity.Stato</class>
+        <class>it.epicode.esercizi.Location</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/gestione_sport"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="Fede1608"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
